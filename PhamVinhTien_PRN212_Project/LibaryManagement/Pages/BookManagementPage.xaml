@@ -1,0 +1,150 @@
+﻿<Page x:Class="LibaryManagement.Pages.BookManagementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibaryManagement.Pages"
+      mc:Ignorable="d" 
+      Title="BookManagementPage" Height="465" Width="850"
+      Loaded="Page_Loaded">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="250"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="BOOK MANAGE" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center" Height="30" FontSize="18" FontWeight="Bold"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Header="SEARCH" Grid.Row="0">
+                    <Canvas>
+                        <Label Content="Book name:" Width="75"/>
+                        <TextBox x:Name="search_bookName" Width="120" Canvas.Left="80" Canvas.Top="5"/>
+
+                        <Label Content="Author:" Canvas.Top="30" Width="75"/>
+                        <TextBox x:Name="search_author" Width="120" Canvas.Left="80" Canvas.Top="35"/>
+                    </Canvas>
+                </GroupBox>
+
+                <GroupBox Header="SORT" Grid.Row="1">
+                    <Canvas>
+                        <RadioButton Name="sortName" GroupName="sort_type1" Canvas.Top="5">Book name</RadioButton>
+
+                        <RadioButton Name="sortAmount" GroupName="sort_type1" Canvas.Top="25">Amount</RadioButton>
+
+                        <RadioButton Name="sortAsc" GroupName="sort_type2" Canvas.Top="5" Canvas.Right="5">A -> Z</RadioButton>
+                        <RadioButton Name="sortDes" GroupName="sort_type2" Canvas.Top="25" Canvas.Right="5">Z -> A</RadioButton>
+                    </Canvas>
+                </GroupBox>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Header="FILTER" Grid.Row="0">
+                    <Canvas>
+
+                        <Label Content="Category:" Canvas.Top="15"/>
+                        <ComboBox Canvas.Top="17" Canvas.Left="68" Width="130" x:Name="cboCategory" SelectionChanged="cboCategory_SelectionChanged">
+
+                        </ComboBox>
+                    </Canvas>
+                </GroupBox>
+
+                <Canvas Grid.Row="1">
+                    <Button Content="ADD" FontWeight="DemiBold" Width="90" Height="25" Canvas.Top="15" Canvas.Left="10" Click="btn_AddClicked"/>
+                    <Button Content="EDIT" FontWeight="DemiBold" Width="90" Height="25" Canvas.Right="10" Canvas.Top="15" Click="btn_EditClicked"/>
+                    <Button Content="REFRESH" FontWeight="DemiBold" Width="90" Height="25" Canvas.Top="55" Canvas.Right="10" Click="btn_RefreshClicked"/>
+                    <Button Content="SEARCH" FontWeight="DemiBold" Width="90" Height="25" Canvas.Top="55" Canvas.Left="10" Click="btn_SearchClicked"/>
+                    <Button Name="btnDelete" Content="DELETE" FontWeight="DemiBold" Width="60" Height="25" Canvas.Top="35" Canvas.Left="108" Click="btn_DeleteClicked" IsEnabled="False"/>
+                </Canvas>
+
+            </Grid>
+
+            <GroupBox Header="INFORMATION" Grid.Column="3" Margin="5,0">
+                <Canvas>
+                    <Label Content="Book ID"/>
+                    <TextBox IsEnabled="False" Canvas.Left="70" Width="165" Canvas.Top="5" Name="tb_BookId"
+                         Text="{Binding Path=BookId, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBooks, 
+                         Path=SelectedItem}"/>
+
+                    <Label Content="Book name" Canvas.Top="20"/>
+                    <TextBox IsEnabled="False" Canvas.Left="70" Width="165" Canvas.Top="25" Name="tb_BookName"
+                         Text="{Binding Path=BookName, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBooks, 
+                         Path=SelectedItem}"/>
+
+
+                    <Label Content="Category" Canvas.Top="40"/>
+                    <TextBox IsEnabled="False" Canvas.Left="70" Width="165" Canvas.Top="45" x:Name="tbCategory"
+                          Text="{Binding Path=Category.CategoryName, Mode=OneWay}" 
+                          
+                        DataContext="{Binding ElementName=lvBooks, 
+                         Path=SelectedItem}">
+                    </TextBox>
+
+
+                    <Label Content="Author" Canvas.Top="60"/>
+                    <TextBox x:Name="tbAutor" Canvas.Left="70" Width="165" Canvas.Top="65" IsEnabled="False"
+                          Text="{Binding Path=Author.AuthorName, Mode=OneWay}" 
+                          
+                        DataContext="{Binding ElementName=lvBooks, 
+                         Path=SelectedItem}">
+                    </TextBox>
+
+                    <Label Content="Amount" Canvas.Top="80"/>
+                    <TextBox x:Name="tb_Amount" Canvas.Left="70" Width="165" Canvas.Top="85" IsEnabled="False"
+                         Text="{Binding Path=Amount, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBooks, 
+                         Path=SelectedItem}"/>
+
+                    <Label Content="Publisher" Canvas.Top="100"/>
+                    <TextBox x:Name="tbPublisher" Canvas.Left="70" Width="165" Canvas.Top="105" IsEnabled="False"
+                          Text="{Binding Path=Publisher.PublisherName, Mode=OneWay}" 
+                          
+                        DataContext="{Binding ElementName=lvBooks, 
+                         Path=SelectedItem}">
+                    </TextBox>
+                </Canvas>
+            </GroupBox>
+
+        </Grid>
+
+        <ListView Name="lvBooks" Grid.Row="2" Margin="0,5,0,0" SelectionChanged="lvSelectionChange">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Book ID" Width="50"
+                                        DisplayMemberBinding="{Binding Path=BookId, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Title" Width="200"
+                                        DisplayMemberBinding="{Binding Path=BookName, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Amount" Width="70"
+                                        DisplayMemberBinding="{Binding Path=Amount, Mode=TwoWay }"/>
+                    <GridViewColumn Header="Category" Width="200"
+                                         DisplayMemberBinding="{Binding Path=Category.CategoryName, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Author" Width="170" 
+                                        DisplayMemberBinding="{Binding Path=Author.AuthorName, Mode=TwoWay}"/>
+                    <GridViewColumn Header="Publisher" Width="170" 
+                                        DisplayMemberBinding="{Binding Path=Publisher.PublisherName, Mode=TwoWay}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

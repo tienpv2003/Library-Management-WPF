@@ -1,0 +1,145 @@
+﻿<Page x:Class="LibaryManagement.Pages.ReaderManagementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibaryManagement.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ReaderManagementPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="250"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="READER MANAGE" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center" Height="30" FontSize="18" FontWeight="Bold"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Header="SEARCH" Grid.Row="0">
+                    <Canvas>
+                        <RadioButton Name="rd_studentname" GroupName="search" Canvas.Top="5">
+                            <Canvas>
+                                <Label Content="Student name:" Width="95"/>
+                                <TextBox x:Name="search_name" Width="120" Canvas.Left="100" Canvas.Top="5"/>
+                            </Canvas>
+                        </RadioButton>
+
+                        <RadioButton Name="rd_studentid" GroupName="search" Canvas.Top="30">
+                            <Canvas>
+                                <Label Content="Student ID:" Canvas.Top="5" Width="95"/>
+                                <TextBox x:Name="search_id" Width="120" Canvas.Left="100" Canvas.Top="7"/>
+                            </Canvas>
+                        </RadioButton>
+                    </Canvas>
+                </GroupBox>
+
+                <GroupBox Header="SORT" Grid.Row="1">
+                    <Canvas>
+                        <RadioButton Name="sortName" GroupName="sort_type1" Canvas.Top="5">Student name</RadioButton>
+                        <RadioButton Name="sortDOB" GroupName="sort_type1" Canvas.Top="25">DOB</RadioButton>
+
+                        <RadioButton Name="sortAcs" GroupName="sort_type2" Canvas.Top="5" Canvas.Right="5">A -> Z</RadioButton>
+                        <RadioButton Name="sortDes" GroupName="sort_type2" Canvas.Top="25" Canvas.Right="5">Z -> A</RadioButton>
+                    </Canvas>
+                </GroupBox>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="5,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Header="BORROW" Grid.Row="0">
+                    <ListView Name="lvBorrow" BorderThickness="1,0">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Book ID" Width="80"
+                                            DisplayMemberBinding="{Binding Path=BookId }"/>
+                                <GridViewColumn Header="Book Name" Width="130"
+                                            DisplayMemberBinding="{Binding Path=Book.BookName }"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </GroupBox>
+
+                <Canvas Grid.Row="1">
+                    <Button Content="REFRESH" FontWeight="DemiBold" Width="60" Height="25" Canvas.Top="28" Canvas.Right="20" Click="btn_RefreshClicked" Canvas.Left="98" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Button Content="SEARCH" FontWeight="DemiBold" Width="58" Height="25" Canvas.Top="10" Canvas.Left="10" Click="btn_SearchClicked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button Content="ADD" FontWeight="DemiBold" Width="58" Height="24" Canvas.Top="11" Canvas.Left="189" Click="btn_AddClicked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button Content="DELETE" FontWeight="DemiBold" Width="58" Height="24" Canvas.Top="52" Canvas.Left="189" Click="btn_DeleteClicked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button Content="EDIT" FontWeight="DemiBold" Width="58" Height="25" Canvas.Top="51" Canvas.Left="10" Click="btn_EditClicked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                </Canvas>
+
+            </Grid>
+
+            <GroupBox Header="INFORMATION" Grid.Column="3" Margin="5,0">
+                <Canvas Height="137" VerticalAlignment="Top">
+                    <Label Content="Student ID"/>
+                    <TextBox x:Name="tbStudentId" Canvas.Left="90" Width="130" Canvas.Top="5" IsEnabled="False"
+                         Text="{Binding Path=StudentId, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvStudents, 
+                         Path=SelectedItem}" TextChanged="TextChanged"/>
+
+                    <Label Content="Student name" Canvas.Top="25"/>
+                    <TextBox Name="tbName" Canvas.Left="90" Width="130" Canvas.Top="30" IsEnabled="False"
+                         Text="{Binding Path=StudentName, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvStudents, 
+                         Path=SelectedItem}"/>
+
+                    <Label Content="Phone" Canvas.Top="55"/>
+                    <TextBox Name="tbPhone" Canvas.Left="90" Width="130" Canvas.Top="60" IsEnabled="False"
+                         Text="{Binding Path=Phone, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvStudents, 
+                         Path=SelectedItem}"/>
+
+                    <Label Content="DOB" Canvas.Top="85"/>
+                    <TextBox Name="tbDOB" Canvas.Left="90" Width="130" Canvas.Top="90" IsEnabled="False"
+                         Text="{Binding Path=Dob, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvStudents, 
+                         Path=SelectedItem}"/>
+
+                    <Label Content="Address" Canvas.Top="115"/>
+                    <TextBox Name="tbAddress" Canvas.Left="90" Width="130" Canvas.Top="120" IsEnabled="False"
+                         Text="{Binding Path=Address, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvStudents, 
+                         Path=SelectedItem}"/>
+
+                </Canvas>
+            </GroupBox>
+
+        </Grid>
+
+        <ListView Name="lvStudents" Grid.Row="2" Margin="0,5,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Student ID" Width="100"
+                                        DisplayMemberBinding="{Binding Path=StudentId }"/>
+                    <GridViewColumn Header="Student Name" Width="200"
+                                        DisplayMemberBinding="{Binding Path=StudentName}"/>
+                    <GridViewColumn Header="Phone" Width="100"
+                                        DisplayMemberBinding="{Binding Path=Phone }"/>
+                    <GridViewColumn Header="Date Of Birth" Width="200"
+                                         DisplayMemberBinding="{Binding Path=Dob}"/>
+                    <GridViewColumn Header="Address" Width="200" 
+                                        DisplayMemberBinding="{Binding Path=Address}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

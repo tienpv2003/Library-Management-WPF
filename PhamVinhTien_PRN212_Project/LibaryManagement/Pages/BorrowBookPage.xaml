@@ -1,0 +1,166 @@
+﻿<Page x:Class="LibaryManagement.Pages.BorrowBookPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibaryManagement.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BorrowBookPage" Width="820" Height="465">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" FontWeight="Bold" FontSize="25" TextAlignment="Center"> 
+        BORROW BOOK
+        </TextBlock>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="275"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="5,0,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Header="Student info" Grid.Row="0">
+                    <Canvas>
+                        <Label Content="Student ID:"/>
+                        <TextBox x:Name="tbStudentId" IsEnabled="False" Width="120" Canvas.Left="100" Canvas.Top="5"
+                             Text="{Binding Path=StudentId, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Student name:" Canvas.Top="25"/>
+                        <TextBox x:Name="tbStudentName" IsEnabled="False" Width="120" Canvas.Left="100" Canvas.Top="30"
+                             Text="{Binding Path=Student.StudentName, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Phone:" Canvas.Top="50"/>
+                        <TextBox x:Name="tbPhone" IsEnabled="False" Width="120" Canvas.Left="100" Canvas.Top="55"
+                             Text="{Binding Path=Student.Phone, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+                    </Canvas>
+                </GroupBox>
+
+                <GroupBox Header="Book info" Grid.Row="1">
+                    <Canvas>
+                        <Label Content="Book ID:"/>
+                        <TextBox x:Name="tbBookId" IsEnabled="False" Width="120" Canvas.Left="100" Canvas.Top="5"
+                             Text="{Binding Path=BookId, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Book name:" Canvas.Top="25"/>
+                        <TextBox x:Name="tbBookName" IsEnabled="False" Width="120" Canvas.Left="100" Canvas.Top="30"
+                             Text="{Binding Path=Book.BookName, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Available:" Canvas.Top="50"/>
+                        <TextBox x:Name="tbAmount" IsEnabled="False" Width="120" Canvas.Left="100" Canvas.Top="55"
+                             Text="{Binding Path=Book.Amount, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+                    </Canvas>
+                </GroupBox>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="5,0,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="3*"/>
+                    <RowDefinition Height="5*"/>
+                </Grid.RowDefinitions>
+
+                <GroupBox Header="Search" Grid.Row="0">
+                    <Canvas>
+                        <GroupBox Header="Search by">
+                            <WrapPanel>
+                                <RadioButton Name="rd_studentid" GroupName="rd_search" Margin="5">Student ID</RadioButton>
+                                <RadioButton Name="rd_bookid" GroupName="rd_search" Margin="5">Book ID</RadioButton>
+                            </WrapPanel>
+                        </GroupBox>
+
+                        <GroupBox Header="Input for searching" Canvas.Right="90" Width="250">
+                            <TextBox x:Name="searchText" Width="180" Margin="5"/>
+                        </GroupBox>
+
+                        <Button Canvas.Right="10" Width="65" Height="30" Canvas.Top="14" FontWeight="DemiBold" Click="btn_SearchClicked">Search</Button>
+                    </Canvas>
+                </GroupBox>
+
+                <GroupBox Header="Borrow record" Grid.Row="1">
+                    <Canvas>
+                        <Label Content="Book ID" Canvas.Top="5"/>
+                        <TextBox Width="100" Canvas.Top="8" Canvas.Left="80" IsEnabled="False"
+                             IsReadOnly="true"
+                        Text="{Binding Path=BookId, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Book Name" Canvas.Top="30"/>
+                        <TextBox Width="100" Canvas.Top="32" Canvas.Left="80" IsEnabled="False"
+                             IsReadOnly="true"
+                        Text="{Binding Path=Book.BookName, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Student ID" Canvas.Top="54"/>
+                        <TextBox Width="100" Canvas.Top="56" Canvas.Left="80" IsEnabled="False"
+                             IsReadOnly="true"
+                        Text="{Binding Path=StudentId, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Borrowed Date" Canvas.Left="200" Canvas.Top="5"/>
+                        <TextBox Width="100" Canvas.Top="8" Canvas.Left="300" IsEnabled="False"
+                             IsReadOnly="true"
+                        Text="{Binding Path=BorrowedDate, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Label Content="Return Date" Canvas.Top="30" Canvas.Left="200"/>
+                        <TextBox Width="100" Canvas.Top="32" Canvas.Left="300" IsEnabled="False"
+                             Text="{Binding Path=ReturnDate, Mode=OneWay}" 
+                        DataContext="{Binding ElementName=lvBorrows, 
+                         Path=SelectedItem}"/>
+
+                        <Button Content="Borrow" Canvas.Bottom="12" Canvas.Right="250" Padding="5" Width="50" Click="btn_BorrowClicked"/>
+                        <Button Content="Extend" Canvas.Bottom="12" Canvas.Right="180" Padding="5" Width="50" Click="btn_ExtendClicked"/>
+                        <Button Content="Return" Canvas.Bottom="12" Canvas.Right="110" Padding="5" Width="50" Click="btn_ReturnClicked"/>
+                        <Button Content="Refresh" Canvas.Bottom="12" Canvas.Right="40" Padding="5" Width="50" Click="btn_RefreshClick"/>
+                    </Canvas>
+                </GroupBox>
+            </Grid>
+        </Grid>
+
+        <ListView Name="lvBorrows" Grid.Row="2">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Book ID" Width="50"
+                                DisplayMemberBinding="{Binding Path=BookId }"/>
+                    <GridViewColumn Header="Book name" Width="150"
+                                DisplayMemberBinding="{Binding Path=Book.BookName }"/>
+                    <GridViewColumn Header="Student ID" Width="100"
+                                DisplayMemberBinding="{Binding Path=StudentId }"/>
+                    <GridViewColumn Header="Student name" Width="200"
+                                DisplayMemberBinding="{Binding Path=Student.StudentName }"/>
+                    <GridViewColumn Header="Borrowed Date" Width="150"
+                                DisplayMemberBinding="{Binding Path=BorrowedDate }"/>
+                    <GridViewColumn Header="Return Date" Width="150"
+                                DisplayMemberBinding="{Binding Path=ReturnDate }"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

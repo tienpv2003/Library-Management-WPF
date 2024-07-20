@@ -1,0 +1,33 @@
+﻿<Window x:Class="LibaryManagement.Windows.AddReader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibaryManagement.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Add" Height="300" Width="320">
+
+    <Grid Background="White">
+        <Canvas Margin="10">
+            <Label Content="Student ID:" Canvas.Top="5"/>
+            <TextBox x:Name="txtStudentID" Width="200" Canvas.Left="80" Canvas.Top="8"/>
+
+            <Label Content="StudentName:" Canvas.Top="39" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtStudentName" Width="200" Canvas.Left="80" Canvas.Top="43" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+            <Label Content="Phone:" Canvas.Top="70" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtPhone" Width="200" Canvas.Left="80" Canvas.Top="78" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+            <Label Content="Dob:" Canvas.Top="112" RenderTransformOrigin="0.606,1.119"/>
+            <DatePicker Name="dbDob" Width="200" Canvas.Left="80" Canvas.Top="114" RenderTransformOrigin="0.492,1.543" HorizontalAlignment="Center" VerticalAlignment="Top" ></DatePicker>
+
+            <Label Content="Address:" Canvas.Top="155"/>
+            <TextBox x:Name="txtAddress" Width="200" Canvas.Left="80" Canvas.Top="158"/>
+
+            <Button Content="ADD" FontSize="15" FontWeight="DemiBold" Width="80" Height="30" Canvas.Top="200" Canvas.Left="20" Click="btn_Add"/>
+            <Button Content="REFRESH" FontSize="15" FontWeight="DemiBold" Width="80" Height="30" Canvas.Top="200" Canvas.Left="110" Click="btn_Refresh" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Content="CANCEL" FontSize="15" FontWeight="DemiBold" Width="80" Height="30" Canvas.Top="200" Canvas.Left="200" Click="btn_Cancel" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+    </Grid>
+</Window>

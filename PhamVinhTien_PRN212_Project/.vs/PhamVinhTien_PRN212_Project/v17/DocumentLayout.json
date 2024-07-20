@@ -1,0 +1,195 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\pages\\borrowbookpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\pages\\borrowbookpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\changepasswordstaff.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\changepasswordstaff.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\otpwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\otpwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\forgotpassword.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\addborrow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\addborrow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\registerstaffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\registerstaffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\forgotpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\windows\\profilestaffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\windows\\profilestaffwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|d:\\summer_2024\\prn212\\project\\phamvinhtien_prn212_project\\libarymanagement\\businessobject\\userobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE97F99A-14B7-470E-8CE4-BFCBBBD8BDB3}|LibaryManagement\\LibaryManagement.csproj|solutionrelative:libarymanagement\\businessobject\\userobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 163,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChangePasswordStaff.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ChangePasswordStaff.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\ChangePasswordStaff.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ChangePasswordStaff.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Windows\\ChangePasswordStaff.xaml.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwD0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T07:29:03.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BorrowBookPage.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Pages\\BorrowBookPage.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Pages\\BorrowBookPage.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Pages\\BorrowBookPage.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Pages\\BorrowBookPage.xaml.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAowFcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:29:16.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ForgotPassword.xaml",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ForgotPassword.xaml",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\ForgotPassword.xaml",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ForgotPassword.xaml",
+              "RelativeToolTip": "LibaryManagement\\Windows\\ForgotPassword.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T06:26:46.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfileStaffWindow.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ProfileStaffWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\ProfileStaffWindow.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ProfileStaffWindow.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Windows\\ProfileStaffWindow.xaml.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:22:33.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ForgotPassword.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ForgotPassword.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\ForgotPassword.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\ForgotPassword.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Windows\\ForgotPassword.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAcwBgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:04:12.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Windows\\LoginWindow.xaml.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAcwE8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:58:13.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OTPWindow.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\OTPWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\OTPWindow.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\OTPWindow.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Windows\\OTPWindow.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:44:27.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddBorrow.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\AddBorrow.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\AddBorrow.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\AddBorrow.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Windows\\AddBorrow.xaml.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAYwCEAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T07:12:27.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterStaffWindow.xaml.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\RegisterStaffWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\Windows\\RegisterStaffWindow.xaml.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\Windows\\RegisterStaffWindow.xaml.cs",
+              "RelativeToolTip": "LibaryManagement\\Windows\\RegisterStaffWindow.xaml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwCsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T06:44:44.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserObject.cs",
+              "DocumentMoniker": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\BusinessObject\\UserObject.cs",
+              "RelativeDocumentMoniker": "LibaryManagement\\BusinessObject\\UserObject.cs",
+              "ToolTip": "D:\\SUMMER_2024\\PRN212\\Project\\PhamVinhTien_PRN212_Project\\LibaryManagement\\BusinessObject\\UserObject.cs",
+              "RelativeToolTip": "LibaryManagement\\BusinessObject\\UserObject.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA3wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T05:58:05.99Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+﻿<Page x:Class="LibaryManagement.Pages.PublisherManagementPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibaryManagement.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PublisherManagementPage">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="PUBLISHER MANAGEMENT" Foreground="Black" TextAlignment="Center" VerticalAlignment="Center" Height="30" FontSize="18" FontWeight="Bold" />
+
+        <Grid Grid.Row="1" Margin="10,10,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="88*"/>
+                <ColumnDefinition Width="107*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="ADD PUBLISHER" FontWeight="Bold" FontSize="20" VerticalAlignment="Top"/>
+            <StackPanel Grid.Column="0" Margin="10,43,10,10">
+                <TextBlock Text="Publisher ID" FontWeight="Bold"/>
+                <TextBox x:Name="tbPublisherId" Margin="0,5"/>
+
+                <TextBlock Text="Publisher Name" FontWeight="Bold"/>
+                <TextBox x:Name="tbPublisherName" Margin="0,5"/>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10">
+                    <Button Content="ADD" Width="75" Click="btn_Add_Click"/>
+                    <Button Content="EDIT" Width="75" Margin="5,0" Click="btn_Edit_Click"/>
+                    <Button Content="DELETE" Width="75" Margin="5,0" Click="btn_Delete_Click"/>
+                    <Button Content="REFRESH" Width="75" Margin="5,0" Click="btn_Refresh_Click"/>
+                </StackPanel>
+                <Label Content="INFORMATION" FontSize="20" Margin="80,0,0,20"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,20">
+                    <TextBlock Text="Publisher ID" FontWeight="Bold"/>
+                    <TextBox x:Name="txtPublisherId" IsEnabled="False" Text="{Binding PublisherId}" DataContext="{Binding SelectedItem, ElementName=lvPublishers}" Width="214" Margin="40,0,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Publisher Name" FontWeight="Bold"/>
+                    <TextBox x:Name="txtPublisherName" IsEnabled="False" Text="{Binding PublisherName}" DataContext="{Binding SelectedItem, ElementName=lvPublishers}" Width="213" Margin="20,0,0,0"/>
+                </StackPanel>
+            </StackPanel>
+
+            <ListView x:Name="lvPublishers" Grid.Column="1" Margin="10,10,10,10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Publisher ID" Width="150" DisplayMemberBinding="{Binding PublisherId}" />
+                        <GridViewColumn Header="Publisher Name" Width="250" DisplayMemberBinding="{Binding PublisherName}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>
